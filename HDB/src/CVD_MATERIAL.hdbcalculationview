@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PT00::CVD_MATERIAL" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVD_MATERIAL"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PT00::MAT_MAST">
+    <resourceUri>PT00::MAT_MAST</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PT00::MAT_MAST">
+  <attributes>
+    <attribute id="MATID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATID"/>
+      <keyMapping columnObjectName="MAT_MAST" columnName="MATID"/>
+    </attribute>
+    <attribute id="MAT_GROUP" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAT_GROUP"/>
+      <keyMapping columnObjectName="MAT_MAST" columnName="MAT_GROUP"/>
+    </attribute>
+    <attribute id="CREATEDON" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CREATEDON"/>
+      <keyMapping columnObjectName="MAT_MAST" columnName="CREATEDON"/>
+    </attribute>
+    <attribute id="MAT_TYPE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAT_TYPE"/>
+      <keyMapping columnObjectName="MAT_MAST" columnName="MAT_TYPE"/>
+    </attribute>
+    <attribute id="OLD_MATID" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OLD_MATID"/>
+      <keyMapping columnObjectName="MAT_MAST" columnName="OLD_MATID"/>
+    </attribute>
+    <attribute id="PLANT" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT"/>
+      <keyMapping columnObjectName="MAT_MAST" columnName="PLANT"/>
+    </attribute>
+    <attribute id="COMP_CODE" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COMP_CODE"/>
+      <keyMapping columnObjectName="MAT_MAST" columnName="COMP_CODE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
